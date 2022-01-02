@@ -65,7 +65,6 @@
 		C2FEB34724B7E5F8004FAB73 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FEB34624B7E5F8004FAB73 /* PageView.swift */; };
 		C2FEB34924B7E65A004FAB73 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FEB34824B7E65A004FAB73 /* FeatureCard.swift */; };
 		C2FEB34B24B7EC99004FAB73 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FEB34A24B7EC99004FAB73 /* PageControl.swift */; };
-		CCA3C1892781F567006827FF /* MacLandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3C1882781F567006827FF /* MacLandmarksApp.swift */; };
 		CCA3C18B2781F567006827FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3C18A2781F567006827FF /* ContentView.swift */; };
 		CCA3C18D2781F568006827FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3C18C2781F568006827FF /* Assets.xcassets */; };
 		CCA3C1902781F568006827FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3C18F2781F568006827FF /* Preview Assets.xcassets */; };
@@ -168,7 +167,6 @@
 		C2FEB34824B7E65A004FAB73 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		C2FEB34A24B7EC99004FAB73 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		CCA3C1862781F567006827FF /* MacLandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacLandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCA3C1882781F567006827FF /* MacLandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLandmarksApp.swift; sourceTree = "<group>"; };
 		CCA3C18A2781F567006827FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCA3C18C2781F568006827FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA3C18F2781F568006827FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -410,7 +408,6 @@
 		CCA3C1872781F567006827FF /* MacLandmarks */ = {
 			isa = PBXGroup;
 			children = (
-				CCA3C1882781F567006827FF /* MacLandmarksApp.swift */,
 				CCA3C18A2781F567006827FF /* ContentView.swift */,
 				CCA3C18C2781F568006827FF /* Assets.xcassets */,
 				CCA3C1912781F568006827FF /* MacLandmarks.entitlements */,
@@ -655,7 +652,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA3C18B2781F567006827FF /* ContentView.swift in Sources */,
-				CCA3C1892781F567006827FF /* MacLandmarksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
