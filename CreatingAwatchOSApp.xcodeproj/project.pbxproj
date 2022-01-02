@@ -81,6 +81,7 @@
 		CCA3C19F2781F9C3006827FF /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A4F1EC24C3CAA100A77EA9 /* FavoriteButton.swift */; };
 		CCA3C1A02781F9C3006827FF /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D780224B684BD002E7AEA /* Landmark.swift */; };
 		CCA3C1A12781F9C3006827FF /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = C20D782524B6CE82002E7AEA /* hikeData.json */; };
+		CCA3C1A32781FBC5006827FF /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3C1A22781FBC5006827FF /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +185,7 @@
 		CCA3C18C2781F568006827FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA3C18F2781F568006827FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CCA3C1912781F568006827FF /* MacLandmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacLandmarks.entitlements; sourceTree = "<group>"; };
+		CCA3C1A22781FBC5006827FF /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		F1DE51462CFB9AFC2B69572B /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -422,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA3C18A2781F567006827FF /* ContentView.swift */,
+				CCA3C1A22781FBC5006827FF /* LandmarkDetail.swift */,
 				CCA3C18C2781F568006827FF /* Assets.xcassets */,
 				CCA3C1912781F568006827FF /* MacLandmarks.entitlements */,
 				CCA3C18E2781F568006827FF /* Preview Content */,
@@ -671,6 +674,7 @@
 				CCA3C1A02781F9C3006827FF /* Landmark.swift in Sources */,
 				CCA3C19D2781F9C3006827FF /* CircleImage.swift in Sources */,
 				CCA3C1992781F9C3006827FF /* Profile.swift in Sources */,
+				CCA3C1A32781FBC5006827FF /* LandmarkDetail.swift in Sources */,
 				CCA3C19F2781F9C3006827FF /* FavoriteButton.swift in Sources */,
 				CCA3C19B2781F9C3006827FF /* LandmarkRow.swift in Sources */,
 				CCA3C19A2781F9C3006827FF /* MapView.swift in Sources */,
