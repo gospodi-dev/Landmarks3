@@ -1,21 +1,67 @@
-//
-//  LandmarkDetail.swift
-//  MacLandmarks
-//
-//  Created by Gospodi on 02.01.2022.
-//  Copyright © 2022 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view showing the details for a landmark.
+*/
 
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var modelData: ModelData
+    var landmark: Landmark
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordinate)
+                .ignoresSafeArea(edges: .top)
+                .frame(height: 300)
+            
+            VStack(alignment: .leading, spacing: 20) {
+                HStack(spacing:24) {
+                    CircleImage(image: landmark.image.resizable())
+                        .frame(width: 160, height: 160)
+                }
+
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(landmark.name)
+                            .font(.title)
+                        FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                    }
+
+                    VStack(alignment: .leading) {
+                        Text(landmark.park)
+                        Text(landmark.state)
+                    }
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+
+                    Divider()
+
+                    Text("About \(landmark.name)")
+                        .font(.title2)
+                    Text(landmark.description)
+                }
+                
+            }
+            .padding()
+            .offset(y: -50)
+        }
+        .navigationTitle(landmark.name)
     }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: modelData.landmarks[0])
+            .environmentObject(modelData)
+            .frame(width: 850, height: 700)
     }
 }
