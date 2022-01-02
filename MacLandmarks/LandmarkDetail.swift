@@ -32,6 +32,7 @@ struct LandmarkDetail: View {
                         Text(landmark.name)
                             .font(.title)
                         FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                            .buttonStyle(.plain)
                     }
 
                     VStack(alignment: .leading) {
@@ -50,6 +51,7 @@ struct LandmarkDetail: View {
                 
             }
             .padding()
+            .frame(maxWidth: 700)
             .offset(y: -50)
         }
         .navigationTitle(landmark.name)
