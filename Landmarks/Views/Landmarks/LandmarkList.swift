@@ -34,6 +34,17 @@ struct LandmarkList: View {
             }
             .navigationTitle("Landmarks")
             .frame(minWidth: 300)
+            .toolbar {
+                ToolbarItem {
+                    Menu {
+                        Toggle(isOn: $showFavoritesOnly) {
+                            Label("Favorites only", systemImage: "star.fill")
+                        }
+                    } label: {
+                        Label("Filter", systemImage: "slider.horizontal.3")
+                    }
+                }
+            }
         }
     }
 }
