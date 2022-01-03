@@ -10,6 +10,15 @@ import SwiftUI
 struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
+    
+    enum FilterCategory: String, CaseIterable, Identifiable {
+        case all = "All"
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+        
+        var id: FilterCategory { self }
+    }
 
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
