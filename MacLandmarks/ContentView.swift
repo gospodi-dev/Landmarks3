@@ -1,10 +1,9 @@
-//
-//  ContentView.swift
-//  MacLandmarks
-//
-//  Created by Gospodi on 02.01.2022.
-//  Copyright © 2022 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+The content for the macOS app.
+*/
 
 import SwiftUI
 
@@ -18,5 +17,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
