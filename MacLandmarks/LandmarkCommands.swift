@@ -19,6 +19,7 @@ struct LandmarkCommands: Commands {
             Button("\(selectedLandmark?.isFavorite == true ? "Remove" : "Mark") as Favorite") {
                 selectedLandmark?.isFavorite.toggle()
             }
+            .keyboardShortcut("f", modifiers: [.shift, .option])
             .disabled(selectedLandmark == nil)
         }
     }
