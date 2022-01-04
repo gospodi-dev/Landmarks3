@@ -11,6 +11,16 @@ import MapKit
 struct MapView: View {
     var coordinate: CLLocationCoordinate2D
     @State private var region = MKCoordinateRegion()
+    
+    enum Zoom: String, CaseIterable, Identifiable {
+        case near = "Near"
+        case medium = "Medium"
+        case far = "Far"
+
+        var id: Zoom {
+            return self
+        }
+    }
 
     var body: some View {
         Map(coordinateRegion: $region)
