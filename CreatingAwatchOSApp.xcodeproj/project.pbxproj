@@ -84,6 +84,7 @@
 		CCC8B38F27836F4B00A53A30 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8B38E27836F4B00A53A30 /* LandmarkList.swift */; };
 		CCF660622784960D006B607D /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF660612784960D006B607D /* LandmarkCommands.swift */; };
 		CCF660632784960D006B607D /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF660612784960D006B607D /* LandmarkCommands.swift */; };
+		CCF660652784A459006B607D /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF660642784A459006B607D /* LandmarkSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +191,7 @@
 		CCA3C1A22781FBC5006827FF /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		CCC8B38E27836F4B00A53A30 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		CCF660612784960D006B607D /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
+		CCF660642784A459006B607D /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 		F1DE51462CFB9AFC2B69572B /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -431,6 +433,7 @@
 				CCA3C18A2781F567006827FF /* ContentView.swift */,
 				CCA3C1A22781FBC5006827FF /* LandmarkDetail.swift */,
 				CCF660612784960D006B607D /* LandmarkCommands.swift */,
+				CCF660642784A459006B607D /* LandmarkSettings.swift */,
 				CCA3C18C2781F568006827FF /* Assets.xcassets */,
 				CCA3C1912781F568006827FF /* MacLandmarks.entitlements */,
 				CCA3C18E2781F568006827FF /* Preview Content */,
@@ -679,6 +682,7 @@
 			files = (
 				CCA3C18B2781F567006827FF /* ContentView.swift in Sources */,
 				CCA3C1A02781F9C3006827FF /* Landmark.swift in Sources */,
+				CCF660652784A459006B607D /* LandmarkSettings.swift in Sources */,
 				CCA3C19D2781F9C3006827FF /* CircleImage.swift in Sources */,
 				CCA3C1992781F9C3006827FF /* Profile.swift in Sources */,
 				CCF660632784960D006B607D /* LandmarkCommands.swift in Sources */,
